@@ -7,7 +7,8 @@ let moviesController = require(`../controllers/moviesController`)
 router.get(`/`, moviesController.index);
 router.get(`/id/:id`, moviesController.show);
 router.get(`/movienew`, moviesController.create);
-
+router.post(`/create`, moviesController.store);
+router.get(`/results`, moviesController.search);
 
 
 module.exports = router;
